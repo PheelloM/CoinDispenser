@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dispence</title>
+</head>
+<body>
+
+<table>
+<tr>
+    <th>Number of coins</th>
+    <th>VType</th>
+    <th>Description</th>
+</tr>
+<tr th:each="row : ${change}">
+    <td th:text="${row.number}"></td>
+    <td th:text="${row.type}"></td>
+    <td th:text="${row.description}"></td>
+</tr>
+</table>
+
+</body>
+</html>
