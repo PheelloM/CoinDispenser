@@ -32,6 +32,7 @@ public class dispenserRepositoryTest {
         System.out.println("ID Length: " + savedUserObject.getId().length());
 
         //Assertions
+        //The length of the saved id record should match our final variable UUID_LENGTH
         Assertions.assertNotNull(savedUserObject);
         Assertions.assertEquals(UUID_LENGTH, savedUserObject.getId().length());
 
