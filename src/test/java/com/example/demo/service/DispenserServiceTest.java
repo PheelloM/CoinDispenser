@@ -24,6 +24,8 @@ public class DispenserServiceTest {
             List<UserObject> userObjects = dispenserService.dispence(67, 0);
             for(UserObject userObject : userObjects){
                 System.out.println(userObject.getNumber());
+                //Assertions
+                //The number of coins should match with the number of coins displayed on the frontend
                 switch(counter){
                     case 0:
                         Assertions.assertEquals(6,userObject.getNumber());
